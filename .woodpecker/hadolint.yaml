@@ -6,4 +6,4 @@ when:
 steps:
   hadolint:
     image: hadolint/hadolint:latest
-    entrypoint: ["hadolint", "client/Dockerfile.prod"]
+    entrypoint: ["hadolint", "Dockerfile"]
