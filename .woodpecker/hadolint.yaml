@@ -6,4 +6,4 @@ when:
 steps:
   hadolint:
     image: hadolint/hadolint:latest
-    entrypoint: ["hadolint", "--format", "stylish", "client/Dockerfile.prod"]
+    entrypoint: ["hadolint", "--format", "json", "client/Dockerfile.prod"]
