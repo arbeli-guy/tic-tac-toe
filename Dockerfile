@@ -6,4 +6,3 @@ RUN apt-get update        # Warning: should combine with install or use --no-ins
 RUN pip install requests  # Warning: pin version when installing packages
 ADD . /app               # Warning: use COPY instead of ADD when not extracting
 USER root                # Warning: avoid running as root if possible
-WHAT yes
