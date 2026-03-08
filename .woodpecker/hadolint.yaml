@@ -1,0 +1,10 @@
+---
+when:
+  event: push
+  branch: feature/hadolint
+
+steps:
+  hadolint:
+    image: hadolint/hadolint:latest
+    commands:
+      - hadolint client/Dockerfile.prod
