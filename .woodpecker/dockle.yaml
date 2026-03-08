@@ -1,5 +1,4 @@
-pipeline:
-
+---
   when:
     event: push
     branch: feature/dockle
