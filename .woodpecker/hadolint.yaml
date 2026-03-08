@@ -4,6 +4,7 @@ when:
   branch: feature/hadolint
 
 steps:
-  hadolint:
-    image: hadolint/hadolint:latest
-    entrypoint: ["hadolint", "Dockerfile"]
+############# HADOLINT #############
+- name: hadolint
+  image: hadolint/hadolint:latest
+  entrypoint: ["hadolint", "Dockerfile"]
