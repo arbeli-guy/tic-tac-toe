@@ -6,6 +6,7 @@ when:
 steps:
   dockle:
     image: euryecetelecom/woodpeckerci-dockle:latest
+    user: root
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
     settings:
