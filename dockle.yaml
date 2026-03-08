@@ -1,0 +1,11 @@
+when:
+  event: push
+  branch: feature/dockle
+
+pipeline:
+  dockle_check:
+    image: euryecetelecom/woodpeckerci-dockle
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    settings:
+      dockerfile: client/Dockerfile.prod
