@@ -3,9 +3,10 @@ when:
   branch: feature/dockle
 #
 pipeline:
-  dockle:
-    image: euryecetelecom/woodpeckerci-dockle
-    volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
-    settings:
-      dockerfile: client/Dockerfile.prod
+  steps:
+    dockle:
+      image: euryecetelecom/woodpeckerci-dockle
+      volumes:
+        - /var/run/docker.sock:/var/run/docker.sock
+      settings:
+        dockerfile: client/Dockerfile.prod
