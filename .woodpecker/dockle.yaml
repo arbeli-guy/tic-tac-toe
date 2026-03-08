@@ -1,8 +1,9 @@
-when:
-  event: push
-  branch: feature/dockle
-#
 pipeline:
+
+  when:
+    event: push
+    branch: feature/dockle
+#
   steps:
     dockle:
       image: euryecetelecom/woodpeckerci-dockle
