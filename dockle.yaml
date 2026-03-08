@@ -2,8 +2,8 @@ when:
   event: push
   branch: feature/dockle
 
-pipeline:
-  dockle_check:
+steps:
+  - name: dockle
     image: euryecetelecom/woodpeckerci-dockle
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
