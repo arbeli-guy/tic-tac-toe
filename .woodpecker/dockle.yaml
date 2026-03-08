@@ -5,7 +5,7 @@ when:
 #
 steps:
   dockle:
-    image: euryecetelecom/woodpeckerci-dockle
+    image: euryecetelecom/woodpeckerci-dockle:latest
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
     settings:
