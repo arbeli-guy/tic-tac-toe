@@ -7,9 +7,8 @@ steps:
 ############# HADOLINT #############
 - name: hadolint
   image: hadolint/hadolint:latest
-  #entrypoint: ["hadolint", "--failure-threshold", "error", "--warning", "DL4000", "--warning", "DL3020", "Dockerfile"]
-  commands:
-    - hadolint --failure-threshold error --warning DL4000 --warning DL3020 Dockerfile
+  entrypoint: ["hadolint", "--failure-threshold", "error", "--warning", "DL4000", "--warning", "DL3020", "Dockerfile"]
+
 ############## PRETTIER ##############
 - name: prettier
   image: woodpeckerci/plugin-prettier:next
