@@ -23,4 +23,4 @@ steps:
       echo "Prettier formatting summary:"
       git diff --stat
       echo ""
-      git diff --color -U1
+      git diff --color -U1 | sed '/^diff --git/ s/^/\n/'
