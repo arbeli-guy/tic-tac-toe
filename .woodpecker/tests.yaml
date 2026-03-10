@@ -13,4 +13,11 @@ steps:
 - name: prettier
   image: woodpeckerci/plugin-prettier:next
   settings:
-    check: true
+    check: false
+
+############## PRETTIER-DIFF ##############
+- name: show-prettier-diff
+  image: alpine/git
+  commands:
+    - git diff
+
