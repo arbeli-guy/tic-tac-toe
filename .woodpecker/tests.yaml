@@ -20,4 +20,4 @@ steps:
   image: alpine/git
   commands:
     - git diff --name-only
-    - git diff --color --patience
+    - git diff --color -U1
