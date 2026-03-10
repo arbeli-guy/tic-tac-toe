@@ -19,5 +19,7 @@ steps:
 - name: show-prettier-diff
   image: alpine/git
   commands:
+    - echo "Prettier formatting summary:"
     - git diff --stat
-    - git diff --color -U1 --ws-error-highlight=all
+    - echo ""
+    - git diff --color -U1
