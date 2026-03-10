@@ -19,5 +19,5 @@ steps:
 - name: show-prettier-diff
   image: alpine/git
   commands:
-    - git diff --color
+    - git diff --color --word-diff
 
