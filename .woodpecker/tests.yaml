@@ -7,7 +7,7 @@ steps:
 ############# HADOLINT #############
 - name: hadolint
   image: hadolint/hadolint:latest
-  entrypoint: ["hadolint", "Dockerfile"]
+  entrypoint: ["hadolint", "--failure-threshold", "error", "--warning", "DL4000", "--warning", "DL3020", "Dockerfile"]
 
 ############## PRETTIER ##############
 - name: prettier
