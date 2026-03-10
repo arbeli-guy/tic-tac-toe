@@ -19,7 +19,8 @@ steps:
 - name: show-prettier-diff
   image: alpine/git
   commands:
-    - echo "Prettier formatting summary:"
-    - git diff --stat
-    - echo ""
-    - git diff --color -U1
+    - |
+      echo "Prettier formatting summary:"
+      git diff --stat
+      echo ""
+      git diff --color -U1
