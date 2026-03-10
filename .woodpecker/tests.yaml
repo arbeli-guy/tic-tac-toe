@@ -20,4 +20,4 @@ steps:
   image: alpine/git
   commands:
     - git diff --name-only
-    - git diff --color | sed 's/^/    /'
+    - git diff --color --side-by-side
