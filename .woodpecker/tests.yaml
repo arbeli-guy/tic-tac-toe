@@ -1,0 +1,16 @@
+---
+when:
+  event: push
+  branch: feature/hadolint
+
+steps:
+############# HADOLINT #############
+- name: hadolint
+  image: hadolint/hadolint:latest
+  entrypoint: ["hadolint", "Dockerfile"]
+
+############## PRETTIER ##############
+- name: prettier
+  image: woodpeckerci/plugin-prettier:next
+  settings:
+    check: true
