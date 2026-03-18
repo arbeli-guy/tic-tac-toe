@@ -13,7 +13,7 @@ steps:
 - name: prettier
   image: woodpeckerci/plugin-prettier:next
   settings:
-    check: false
+    check: true
     path: .woodpecker/tests.yaml
 
 ############## PRETTIER-DIFF ##############
